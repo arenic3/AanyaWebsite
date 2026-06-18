@@ -86,6 +86,12 @@ pages.forEach((page) => {
     page.setAttribute('tabindex', '-1');
 });
 
+const navEntry = performance.getEntriesByType('navigation')[0];
+const isFreshNavigation = !navEntry || navEntry.type === 'navigate';
+if (isFreshNavigation && window.location.hash) {
+    window.history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+
 routeToHash('auto');
 
 document.querySelectorAll('.work-image-container--multi').forEach((container) => {
