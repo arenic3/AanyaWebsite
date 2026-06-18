@@ -894,11 +894,17 @@ a {
         max-height: 70svh;
         width: calc(100% - 120px);
         margin-inline: auto;
+        overflow: visible;
     }
 
     .work-figure > .work-image-container--multi.work-image-container--small {
         width: calc(100% - 120px);
         max-width: 280px;
+        overflow: visible;
+    }
+
+    .work-multi-stage {
+        overflow: hidden;
     }
 
     .work-image {
