@@ -3,7 +3,15 @@ const pageLinks = Array.from(document.querySelectorAll('a[href^="#"]'));
 const workSections = Array.from(document.querySelectorAll('.work-year-section'));
 const selectedPage = document.querySelector('#selected-works');
 
-const defaultPage = 'entrance';
+const ENTERED_KEY = 'aanya:entered';
+const hasEntered = () => {
+    try { return sessionStorage.getItem(ENTERED_KEY) === '1'; }
+    catch (_) { return false; }
+};
+const markEntered = () => {
+    try { sessionStorage.setItem(ENTERED_KEY, '1'); } catch (_) { /* ignore */ }
+};
+
 const validPages = new Set(pages.map((page) => page.id));
 const validWorkSections = new Set(workSections.map((section) => section.id));
 
@@ -12,9 +20,11 @@ function getHashId() {
 }
 
 function getPageForHash(id) {
+    if (!hasEntered()) return 'entrance';
+    if (id === 'entrance') return 'home';
     if (validPages.has(id)) return id;
     if (validWorkSections.has(id)) return 'selected-works';
-    return defaultPage;
+    return 'home';
 }
 
 function getWorkSectionForHash(id) {
@@ -59,9 +69,21 @@ function scrollToWorkSection(sectionId, behavior = 'smooth') {
 }
 
 function routeToHash(behavior = 'smooth') {
+    if (!hasEntered()) {
+        if (window.location.hash) {
+            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+        setActivePage('entrance');
+        return;
+    }
+
     const hashId = getHashId();
     const pageId = getPageForHash(hashId);
     const sectionId = getWorkSectionForHash(hashId);
+
+    if (hashId === 'entrance' || (hashId && !validPages.has(hashId) && !validWorkSections.has(hashId))) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search + '#home');
+    }
 
     setActivePage(pageId, { sectionId });
     if (sectionId) window.requestAnimationFrame(() => scrollToWorkSection(sectionId, behavior));
@@ -75,7 +97,15 @@ pageLinks.forEach((link) => {
         if (!targetId || (!validPages.has(targetId) && !validWorkSections.has(targetId))) return;
 
         event.preventDefault();
-        window.history.pushState(null, '', href);
+
+        const isEnterClick = link.classList.contains('enter-piece');
+        if (isEnterClick) {
+            markEntered();
+            window.history.replaceState(null, '', href);
+        } else {
+            window.history.pushState(null, '', href);
+        }
+
         routeToHash();
     });
 });
@@ -85,12 +115,6 @@ window.addEventListener('popstate', () => routeToHash('auto'));
 pages.forEach((page) => {
     page.setAttribute('tabindex', '-1');
 });
-
-const navEntry = performance.getEntriesByType('navigation')[0];
-const isFreshNavigation = !navEntry || navEntry.type === 'navigate';
-if (isFreshNavigation && window.location.hash) {
-    window.history.replaceState(null, '', window.location.pathname + window.location.search);
-}
 
 routeToHash('auto');
 
