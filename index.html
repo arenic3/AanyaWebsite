@@ -3,209 +3,583 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/styles.css">
-    <title>AanyaMukhtyar</title>ç
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
+    <meta name="description" content="Portfolio website for Aanya Mukhtyar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;400&family=Monomakh&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css?v=48">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Aanya Mukhtyar</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-title">Aanya Mukhtyar</div>
-        <div class="navbar-menu">
-            <div class="dropdown">
-                <button class="dropdown-btn" id="hamburger-btn">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#about">About</a>
-                    <a href="#projects">Gallery</a>
-                    <a href="#exhibitions">Exhibitions</a>
-                    <a href="#contact">Contact</a>
+    <main class="site-shell" aria-live="polite">
+        <section class="page entrance-page is-active" id="entrance" aria-labelledby="entrance-title">
+            <h1 id="entrance-title">Aanya Mukhtyar</h1>
+            <a class="enter-piece" href="#home" aria-label="Enter Aanya Mukhtyar portfolio">
+                <picture class="enter-image-container image-container">
+                    <video class="enter-image asset-image" autoplay loop muted playsinline preload="auto" disablepictureinpicture aria-label="Painting hanging from ceiling">
+                        <source src="public/assets/MAIN.mp4" type="video/mp4">
+                        <source src="public/assets/MAIN.webm" type="video/webm">
+                    </video>
+                </picture>
+                <span class="enter-text">enter here</span>
+            </a>
+            <video class="landing-gif image-slot asset-image" autoplay loop muted playsinline preload="auto" disablepictureinpicture aria-label="Birds background animation">
+                <source src="public/assets/birds.mp4" type="video/mp4">
+                <source src="public/assets/birds.webm" type="video/webm">
+            </video>
+        </section>
+
+        <section class="page home-page" id="home" aria-labelledby="home-title">
+            <div class="home-cluster">
+                <nav class="page-nav" aria-label="Portfolio pages">
+                    <a class="brand-link" href="#home" id="home-title">Aanya Mukhtyar</a>
+                    <a href="#selected-works">selected works</a>
+                    <a class="year-link" href="#works-2026">-2026</a>
+                    <a class="year-link" href="#works-2025">-2025</a>
+                    <a class="year-link" href="#works-2024">-2024</a>
+                    <a href="#selected-shows">selected shows</a>
+                    <a class="about-link" href="#about">about</a>
+                </nav>
+            </div>
+
+            <figure class="home-artwork image-container" aria-label="Home page artwork image slot">
+                <video class="home-image asset-image" autoplay loop muted playsinline preload="auto" disablepictureinpicture aria-label="Featured artwork">
+                    <source src="public/assets/MAIN.mp4" type="video/mp4">
+                    <source src="public/assets/MAIN.webm" type="video/webm">
+                </video>
+            </figure>
+
+            <footer class="page-footer" aria-label="Future footer artwork area">
+                <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
+                <div class="footer-content">
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse.webp" alt="">
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse2.webp" alt="">
+                    <p class="footer-note">To receive a full portfolio of works for sale please get in touch</p>
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse3.webp" alt="">
+                    <div class="footer-actions" aria-label="Contact links">
+                        <a class="footer-action" href="https://www.instagram.com/aanyaaz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img class="footer-icon image-slot asset-image" src="public/assets/IG.svg" alt="">
+                        </a>
+                        <a class="footer-action" href="mailto:aan.muk@icloud.com" aria-label="Email">
+                            <img class="footer-icon image-slot asset-image" src="public/assets/EMAIL.svg" alt="">
+                        </a>
+                </div>
+            </footer>
+        </section>
+
+        <section class="page selected-page" id="selected-works" aria-labelledby="selected-title">
+            <nav class="page-nav side-nav" aria-label="Portfolio pages">
+                <a class="brand-link" href="#home">Aanya Mukhtyar</a>
+                <a href="#selected-works" id="selected-title">selected works</a>
+                <a class="year-link" href="#works-2026">-2026</a>
+                <a class="year-link" href="#works-2025">-2025</a>
+                <a class="year-link" href="#works-2024">-2024</a>
+                <a href="#selected-shows">selected shows</a>
+                <a class="about-link" href="#about">about</a>
+            </nav>
+
+            <div class="selected-scroll">
+                <section class="work-year-section" id="works-2026" aria-labelledby="works-2026-title">
+                    <h2 id="works-2026-title">2026</h2>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <div class="work-image-container work-image-container--multi work-image-container--small image-container" data-multi="true">
+                                <div class="work-multi-stage">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/camel2.webp" alt="Schrödinger's Camel detail">
+                                    <img class="work-image asset-image work-multi-img is-active" src="public/assets/camel.webp" alt="Schrödinger's Camel artwork">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/camel3.webp" alt="Schrödinger's Camel detail">
+                                </div>
+                            </div>
+                            <figcaption>
+                                <span class="work-title">Schrödinger's Camel</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Stained glass, lead solder, oil on canvas. 10 x 10 x 10 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <div class="work-image-container work-image-container--multi work-image-container--small image-container" data-multi="true">
+                                <div class="work-multi-stage">
+                                    <img class="work-image asset-image work-multi-img is-active" src="public/assets/cleaning3.webp" alt="An Oriental Lense, Cleaning Device artwork">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/cleaning2.webp" alt="An Oriental Lense, Cleaning Device detail">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/cleaning.webp" alt="An Oriental Lense, Cleaning Device detail">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/cleaning4.webp" alt="An Oriental Lense, Cleaning Device detail">
+                                </div>
+                            </div>
+                            <figcaption>
+                                <span class="work-title">An Oriental Lense, Cleaning Device</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">MDF, Lead Solder, Glass, Brass, oil and acrylic on canvas. 10 x 10 x 7 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <div class="work-image-container work-image-container--multi image-container" data-multi="true">
+                                <div class="work-multi-stage">
+                                    <img class="work-image asset-image work-multi-img is-active" id="rotate_this" src="public/assets/Byepandemonium6.webp" alt="Byepandemonium painting">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/Byepandemonium4.webp" alt="Byepandemonium hanging from ceiling">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/Byepandemonium3.webp" alt="Byepandemonium detail">
+                                    <img class="work-image asset-image work-multi-img" src="public/assets/Byepandemonium1.webp" alt="Byepandemonium detail">
+                                </div>
+                            </div>
+                            <figcaption>
+                                <span class="work-title">Bye pandemonium</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Steel, stained glass, lead solder, aluminium, oil and acrylic on canvas.</span>
+                                <span class="work-description">179 cm x 194 cm (Painting)</span>
+                                <span class="work-description">300 cm x 170 cm (Window).</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Look.webp" alt="Look! How small we are artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Look! How small we are</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 100 x 150 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container work-image-container--small image-container">
+                                <img class="work-image asset-image" src="public/assets/Bird.webp" alt="Bird eats cultural food artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Local Bird Eats Cultural Food</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 10 x 10 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Egland.webp" alt="And did those feet in ancient times, Walk upon England’s mountains green? artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">And did those feet in ancient times, Walk upon England’s mountains green?</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 91 x 112 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Bench.webp" alt="Friendship Bench artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Friendship Bench</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Watercolour on MDF. 30 x 39.5 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+
+                <section class="work-year-section" id="works-2025" aria-labelledby="works-2025-title">
+                    <h2 id="works-2025-title">2025</h2>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Jaan_var.webp" alt="Jaan Var artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Jaan Var</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 113 x 163 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Stairway.webp" alt="Stairway to artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Stairway to...</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Oil paint on canvas. 18 x 20 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Light&col2.webp" alt="Light and Color 2 artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Light and Color study 2</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Oil paint on canvas. 7 x 7 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Sun-Sea.webp" alt="Sun setting on the Sea artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Sun setting on the Sea</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Oil paint on canvas. 35 x 45 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Hills&Valleys.webp" alt="Hills and Valleys artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Hills and Valleys</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Oil paint on canvas. 90 x 90 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/2Twizz.webp" alt="2 Aanyas artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">2 Aanyas</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 80 x 94 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Lightness.webp" alt="Lightness of artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Lightness of...</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 5ft x 5ft.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Sun&moon.webp" alt="Sun and Moon converge artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Sun and Moon Converge</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Oil paint on canvas. 64 x 48 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Bouqet.webp" alt="Flower Bouqet artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Flower Bouqet</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 32 x 18 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Kohinoor2.webp" alt="Kohinoor 2 artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Kohinoor 2</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 90 x 165 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/GirlCanDream.webp" alt="A Girl Can Dream 2 artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">A Girl Can Dream 2</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Watercolour on paper. A3.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/GirlCanDream1.webp" alt="A Girl Can Dream 1 artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">A Girl Can Dream 1</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Watercolour on paper. A3.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Tiger.webp" alt="Tipu's Tiger artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Tipu's Tiger</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 33 x 22 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Kohinoor.webp" alt="Kohinoor artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Kohinoor</span>
+                                <span class="work-year">2025</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 74 x 50 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+
+                <section class="work-year-section" id="works-2024" aria-labelledby="works-2024-title">
+                    <h2 id="works-2024-title">2024</h2>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/MothersLand.webp" alt="Mother's Land artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Mother's Land</span>
+                                <span class="work-year">2024</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 83 x 92 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/SelfP.webp" alt="Self Portrait artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Self Portrait</span>
+                                <span class="work-year">2024</span>
+                                <span class="work-description">Acrylic and oil paint on canvas. 60 x 43 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Rajasthani.webp" alt="Rajasthani miniature artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Study of Rajasthani Miniature</span>
+                                <span class="work-year">2024</span>
+                                <span class="work-description">Watercolor on paper, thread. 27 x 28 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <picture class="work-image-container image-container">
+                                <img class="work-image asset-image" src="public/assets/Metamorphosis.webp" alt="Longing for Metamorphosis artwork">
+                            </picture>
+                            <figcaption>
+                                <span class="work-title">Longing for Metamorphosis</span>
+                                <span class="work-year">2024</span>
+                                <span class="work-description">Acrylic and oil paint on canvas, heavy carvable modelling paste, MDF. 91 x 87 cm.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+
+               <footer class="page-footer" aria-label="Future footer artwork area">
+                <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
+                <div class="footer-content">
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse.webp" alt="">
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse2.webp" alt="">
+                    <p class="footer-note">To receive a full portfolio of works for sale please get in touch</p>
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse3.webp" alt="">
+                    <div class="footer-actions" aria-label="Contact links">
+                        <a class="footer-action" href="https://www.instagram.com/aanyaaz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img class="footer-icon image-slot asset-image" src="public/assets/IG.svg" alt="">
+                        </a>
+                        <a class="footer-action" href="mailto:aan.muk@icloud.com" aria-label="Email">
+                            <img class="footer-icon image-slot asset-image" src="public/assets/EMAIL.svg" alt="">
+                        </a>
+                </div>
+            </footer>
+            </div>
+        </section>
+
+        <section class="page selected-page" id="selected-shows" aria-labelledby="shows-title">
+            <nav class="page-nav side-nav" aria-label="Portfolio pages">
+                <a class="brand-link" href="#home">Aanya Mukhtyar</a>
+                <a href="#selected-works">selected works</a>
+                <a href="#selected-shows" id="shows-title">selected shows</a>
+                <a class="about-link" href="#about">about</a>
+            </nav>
+
+            <div class="selected-scroll">
+                <section class="work-year-section" aria-label="Selected shows template">
+                    <article class="work-entry">
+                        <figure class="work-figure">
+                            <div class="work-image-container work-image-container--showcase image-container">
+                                <video class="asset-image" autoplay loop muted playsinline preload="auto" disablepictureinpicture aria-label="Selected show timelapse">
+                                    <source src="public/assets/TIMELAPSE.mp4" type="video/mp4">
+                                    <source src="public/assets/TIMELAPSE.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <figcaption>
+                                <span class="work-title">Goldsmiths Degree Show</span>
+                                <span class="work-year">2026</span>
+                                <span class="work-description">Time lapse of the sun rising and setting over my work.</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+
+                <footer class="page-footer" aria-label="Future footer artwork area">
+                    <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
+                    <div class="footer-content">
+                        <img class="footer-piece image-slot asset-image" src="public/assets/foothorse.webp" alt="">
+                        <img class="footer-piece image-slot asset-image" src="public/assets/foothorse2.webp" alt="">
+                        <p class="footer-note">To receive a full portfolio of works for sale please get in touch</p>
+                        <img class="footer-piece image-slot asset-image" src="public/assets/foothorse3.webp" alt="">
+                        <div class="footer-actions" aria-label="Contact links">
+                            <a class="footer-action" href="https://www.instagram.com/aanyaaz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <img class="footer-icon image-slot asset-image" src="public/assets/IG.svg" alt="">
+                            </a>
+                            <a class="footer-action" href="mailto:aan.muk@icloud.com" aria-label="Email">
+                                <img class="footer-icon image-slot asset-image" src="public/assets/EMAIL.svg" alt="">
+                            </a>
+                    </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+        <section class="page about-page" id="about" aria-labelledby="about-title">
+            <nav class="page-nav side-nav" aria-label="Portfolio pages">
+                <a class="brand-link" href="#home">Aanya Mukhtyar</a>
+                <a href="#selected-works">selected works</a>
+                <a href="#selected-shows">selected shows</a>
+                <a class="about-link" href="#about" id="about-title">about</a>
+            </nav>
+
+            <div class="about-side-column">
+                <picture class="about-image-container image-container">
+                    <img class="about-image asset-image" src="public/assets/ABOUT.webp" alt="Aanya Mukhtyar studio image">
+                </picture>
+
+                <div class="about-details">
+                    <section aria-labelledby="education-title">
+                        <h2 id="education-title">Education</h2>
+                        <p>2026 BA Fine Art, Goldsmiths</p>
+                        <p>2023 Foundation Diploma in Art and Design, Central Saint Martins</p>
+                    </section>
+
+                    <section aria-labelledby="exhibitions-title">
+                        <h2 id="exhibitions-title">Selected Exhibitions</h2>
+                        <p>2026 Goldsmiths BA Fine Art Degree Show, (group) </p>
+                        <p>2025 Carpe Diem, (group) Safehouse</p>
+                        <p>2025, (group) Turps Banana Gallery</p>
+                        <p>2025 Wake, (group) Fitzrovia Gallery</p>
+                        <a href="https://www.turpsbanana.com/turps-summer-show">Summer School Show</a>
+                    </section>
+
+                    <section aria-labelledby="writing-title">
+                        <h2 id="writing-title">Writing</h2>
+                        <a href="https://www.asiimovbaker.com/post/exhibition-testimony-7-wake-at-fitzrovia-gallery">Exhibition Testimony #7: Wake at Fitzrovia Gallery - Asiimov Baker</a>
+                    </section>
                 </div>
             </div>
-        </div>
+
+            <div class="artist-statement">
+                <p>
+                    Aanya Mukhtyar (b.2003) is a British Indian artist based in London. Her
+                    paintings illustrate her interest in the relationship between natural light
+                    and colour. She uses sunlight as a tool for evoking feelings of transcendence
+                    and believes that as a source for all life, sunlight brings viewers
+                    instinctively closer to one another and to themselves; a key aim for her
+                    during such a divisive period of british contemporary life.
+                </p>
+                <p>
+                    She pulls cross cultural experience to create dream-like blends of both her
+                    Indian heritage and British upbringing: a fusion synonymous with herself, and
+                    so explores the innumerable facets of diasporic identity today.
+                </p>
+            </div>
+
+            <footer class="page-footer" aria-label="Future footer artwork area">
+                <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
+                <div class="footer-content">
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse.webp" alt="">
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse2.webp" alt="">
+                    <p class="footer-note">To receive a full portfolio of works for sale please get in touch</p>
+                    <img class="footer-piece image-slot asset-image" src="public/assets/foothorse3.webp" alt="">
+                    <div class="footer-actions" aria-label="Contact links">
+                        <a class="footer-action" href="https://www.instagram.com/aanyaaz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img class="footer-icon image-slot asset-image" src="public/assets/IG.svg" alt="">
+                        </a>
+                        <a class="footer-action" href="mailto:aan.muk@icloud.com" aria-label="Email">
+                            <img class="footer-icon image-slot asset-image" src="public/assets/EMAIL.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
     </div>
-    <div class="content">
-    <section id="about" class="bg-about">
 
-        <!--About image, change here-->
-        <img src="public/assets/Cutout.png" alt="Aanya Mukhtyar painting" id="about-image">
-        <div class="about-text">
-            <!--About text, also change/update here-->
-            <h3>About Me</h3>
-            <p>Welcome to my portfolio! I am Aanya Mukhtyar... blahblahblah blahblahblah blahblahblahv blahblahblah blahblahblah blahblahblah blahblahblah blahblahblah </p>
-        </div>
-    </section>
-    <div class="section-divider"></div>
-     <section id="projects" class="bg-projects">
-        <h2>Gallery</h2>
-    <div class="projects-container">
-        <div class="carousel-container">
-            <input type="radio" name="position" id="proj1" />
-            <input type="radio" name="position" id="proj2" />
-            <input type="radio" name="position" id="proj3" checked/>
-            <input type="radio" name="position" id="proj4" />
-            <input type="radio" name="position" id="proj5" />
-
-            <main id="carousel">
-                <!-- Gallery paintings, copy and paste a div to add more items, update as needed ofc-->
-                <div class="item">
-                    <img src="public/assets/Kohinoor.jpg" alt="Kohinoor painting">
-                </div>
-                <div class="item">
-                    <img src="public/assets/Tiger.jpg" alt="Tiger painting">
-                </div>
-                <div class="item">
-                    <img src="public/assets/SP.jpg" alt="Self portrait painting">
-                </div>
-                <div class="item">
-                    <img src="public/assets/Motherland.jpg" alt="Motherland painting">
-                </div>
-                <div class="item">
-                    <img src="public/assets/Miniature.jpg" alt="Miniature painting">
-                </div>
-            </main>
-            <!-- Gallery descriptions, copy lines and update as needed -->
-             <div class="carousel-info-container">
-                <div class="carousel-info-box">Kohinoor — short description here.</div>
-                <div class="carousel-info-box">Tiger — short description here.</div>
-                <div class="carousel-info-box">Self portrait — short description here.</div>
-                <div class="carousel-info-box">Motherland — short description here.</div>
-                <div class="carousel-info-box">Miniature — short description here.</div>
-            </div>
-         </div>
-    </div>
-</section>
-    <div class="section-divider"></div>
-    <section id="exhibitions" class="bg-exhibitions">
-        <h2>Exhibitions</h2>
-        
-        <!-- Exhibition block, copy & paste to add more -->
-        <div class="exhibition-entry">
-            <h3 class="exhibition-title">Slade 2025</h3>
-            <p class="exhibition-intro">
-                BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-            </p>
-            <div class="exhibition-images">
-                <img src="public/assets/exhibition1-img1.jpg" alt="Exhibition 1 Image 1">
-                <img src="public/assets/exhibition1-img2.jpg" alt="Exhibition 1 Image 2">
-                <img src="public/assets/exhibition1-img3.jpg" alt="Exhibition 1 Image 3">
-            </div>
-        </div>
-
-        <!-- Exhibition block, copy & paste to add more -->
-        <div class="exhibition-entry">
-            <h3 class="exhibition-title">TURPS 2025</h3>
-            <p class="exhibition-intro">
-                DBLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-                BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-            </p>
-            <div class="exhibition-images">
-                <img src="public/assets/exhibition2-img1.jpg" alt="Exhibition 2 Image 1">
-                <img src="public/assets/exhibition2-img2.jpg" alt="Exhibition 2 Image 2">
-            </div>
-        </div>
-
-        <!-- Exhibition block, copy & paste to add more -->
-        <div class="exhibition-entry">
-            <h3 class="exhibition-title">Fitrovia gallery 2025</h3>
-            <p class="exhibition-intro">
-                BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            </p>
-            <div class="exhibition-images">
-                <img src="public/assets/exhibition3-img1.jpg" alt="Exhibition 3 Image 1">
-                <img src="public/assets/exhibition3-img2.jpg" alt="Exhibition 3 Image 2">
-                <img src="public/assets/exhibition3-img3.jpg" alt="Exhibition 3 Image 3">
-                <img src="public/assets/exhibition3-img4.jpg" alt="Exhibition 3 Image 4">
-            </div>
-        </div>
-
-        <!-- Add more exhibitions as needed -->
-    </section>
-    <div class="section-divider"></div>
-   <section id="contact" class="bg-contact">
-    <h2>Contact</h2>
-    <div class="contact-icons">
-        <a href="https://www.instagram.com/aanyaaz/" target="_blank" class="icon-btn" aria-label="Instagram">
-            <img src="public/assets/IG.svg" alt="Instagram" />
-        </a>
-        <a href="mailto:your@email.com" class="icon-btn" aria-label="Email">
-            <img src="public/assets/EMAIL.svg" alt="Email" />
-        </a>
-    </div>
-</section>
-</div>
-<footer class="site-footer">
-    Aanya Mukhtyar © 2025 &dash; All rights reserved
-</footer>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const projectsSection = document.querySelector('#projects');
-  const timeline = projectsSection && projectsSection.querySelector('.timeline');
-  if (!projectsSection || !timeline) return;
-
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      // add "visible" when section is in view, remove when it leaves
-      if (entry.isIntersecting) {
-        timeline.classList.add('visible');
-      } else {
-        timeline.classList.remove('visible');
-      }
-    });
-  }, {
-    root: null,
-    rootMargin: '0px 0px -10% 0px', // tweak to reveal earlier/later
-    threshold: 0.25
-  });
-
-  io.observe(projectsSection);
-});
-
-// Carousel click functionality
-document.addEventListener('DOMContentLoaded', () => {
-  const items = document.querySelectorAll('#carousel .item');
-  const inputs = document.querySelectorAll('input[name="position"]');
-  
-  items.forEach((item, index) => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault(); // Prevent any default behavior
-      e.stopPropagation(); // Stop event from bubbling
-      
-      // Check the corresponding radio button
-      if (inputs[index]) {
-        inputs[index].checked = true;
-      }
-    });
-  });
-
-  // Also prevent default behavior on images
-  const carouselImages = document.querySelectorAll('#carousel .item img');
-  carouselImages.forEach(img => {
-    img.addEventListener('click', (e) => {
-      e.preventDefault();
-    });
-    // Prevent dragging which might trigger navigation
-    img.addEventListener('dragstart', (e) => {
-      e.preventDefault();
-    });
-  });
-
-  // Prevent radio inputs from causing any form submission
-  inputs.forEach(input => {
-    input.addEventListener('change', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-    });
-  });
-});
-</script>
+    <script src="index.js?v=19" defer></script>
 </body>
 </html>
