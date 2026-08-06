@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;400&family=Monomakh&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/styles.css?v=50">
+    <link rel="stylesheet" href="public/styles.css?v=50">  <!-- where it says v=50, increment this by one so the browser actually reads the file as being updated, this avoids cache issues  -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -72,6 +72,8 @@
             </footer>
         </section>
 
+        <!-- This is the navigation, the tags that start with a are the actual clickeable buttons,
+          so if you ever wanna add more sections to the navigation just copy and paste and change the links&texts -->
         <section class="page selected-page" id="selected-works" aria-labelledby="selected-title">
             <nav class="page-nav side-nav" aria-label="Portfolio pages">
                 <a class="brand-link" href="#home">Aanya Mukhtyar</a>
@@ -84,9 +86,13 @@
             </nav>
 
             <div class="selected-scroll">
+
+                <!-- year dividers, so down the line add these for 2027 and so on-->
                 <section class="work-year-section" id="works-2026" aria-labelledby="works-2026-title">
                     <h2 id="works-2026-title">2026</h2>
 
+                    <!-- Each work entry is an article with a figure containing the image and caption, to add more just select, copy and paste the entire chunk from <article to </article>
+                    all while replacing the image sources, alt text, titles etc... -->
                     <article class="work-entry">
                         <figure class="work-figure">
                             <div class="work-image-container work-image-container--multi work-image-container--small image-container" data-multi="true">
@@ -195,6 +201,7 @@
                     </article>
                 </section>
 
+                <!-- year dividers, so down the line add these for 2027 and so on-->
                 <section class="work-year-section" id="works-2025" aria-labelledby="works-2025-title">
                     <h2 id="works-2025-title">2025</h2>
 
@@ -381,6 +388,7 @@
                     </article>
                 </section>
 
+                <!-- year dividers, so down the line add these for 2027 and so on-->
                 <section class="work-year-section" id="works-2024" aria-labelledby="works-2024-title">
                     <h2 id="works-2024-title">2024</h2>
 
@@ -437,6 +445,7 @@
                     </article>
                 </section>
 
+                <!-- This is the footer-->
                <footer class="page-footer" aria-label="Future footer artwork area">
                 <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
                 <div class="footer-content">
@@ -456,6 +465,7 @@
             </div>
         </section>
 
+        <!-- SELECTED SHOWS-->
         <section class="page selected-page" id="selected-shows" aria-labelledby="shows-title">
             <nav class="page-nav side-nav" aria-label="Portfolio pages">
                 <a class="brand-link" href="#home">Aanya Mukhtyar</a>
@@ -464,6 +474,8 @@
                 <a class="about-link" href="#about">about</a>
             </nav>
 
+            <!-- This is the selected show for the goldsmiths one, the sources are the gifs, spans contain the title year etc...
+             the <div> contains the entire thing which is inside of the <section tag.-->
             <div class="selected-scroll">
                 <section class="work-year-section" aria-label="Selected shows template">
                     <article class="work-entry">
@@ -483,6 +495,7 @@
                     </article>
                 </section>
 
+                <!-- This is the footer-->
                 <footer class="page-footer" aria-label="Future footer artwork area">
                     <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
                     <div class="footer-content">
@@ -503,6 +516,7 @@
             </div>
         </section>
 
+        <!--ABOUT PAGE-->
         <section class="page about-page" id="about" aria-labelledby="about-title">
             <nav class="page-nav side-nav" aria-label="Portfolio pages">
                 <a class="brand-link" href="#home">Aanya Mukhtyar</a>
@@ -511,11 +525,13 @@
                 <a class="about-link" href="#about" id="about-title">about</a>
             </nav>
 
+            <!-- This is your Bio image if you ever want to change it-->
             <div class="about-side-column">
                 <picture class="about-image-container image-container">
                     <img class="about-image asset-image" src="public/assets/ABOUT.webp" alt="Aanya Mukhtyar studio image">
                 </picture>
 
+                <!-- This is your formation bit-->
                 <div class="about-details">
                     <section aria-labelledby="education-title">
                         <h2 id="education-title">Education</h2>
@@ -523,6 +539,7 @@
                         <p>2023 Foundation Diploma in Art and Design, Central Saint Martins</p>
                     </section>
 
+                    <!-- This is the stack of past exhibitions so add <p> tags for future ones, the <a> tag for the goldsmiths one is a button that takes you to that page-->
                     <section aria-labelledby="exhibitions-title">
                         <h2 id="exhibitions-title">Selected Exhibitions</h2>
                         <p>2026 <a href="#selected-shows">Goldsmiths BA Fine Art Degree Show</a>, (group) </p>
@@ -532,6 +549,7 @@
                         <a href="https://www.turpsbanana.com/turps-summer-show">Summer School Show</a>
                     </section>
 
+                    <!-- This is one of the selected writings, copy&paste if you want to add more and change the content within-->
                     <section aria-labelledby="writing-title">
                         <h2 id="writing-title">Writing</h2>
                         <a href="https://www.asiimovbaker.com/post/exhibition-testimony-7-wake-at-fitzrovia-gallery">Exhibition Testimony #7: Wake at Fitzrovia Gallery - Asiimov Baker</a>
@@ -539,6 +557,7 @@
                 </div>
             </div>
 
+            <!-- This is your Bio-->
             <div class="artist-statement">
                 <p>
                     Aanya Mukhtyar (b.2003) is a British Indian artist based in London. Her
@@ -555,6 +574,7 @@
                 </p>
             </div>
 
+            <!-- This is the footer-->
             <footer class="page-footer" aria-label="Future footer artwork area">
                 <img class="footer-background image-slot asset-image" src="public/assets/foot.webp" alt="">
                 <div class="footer-content">
